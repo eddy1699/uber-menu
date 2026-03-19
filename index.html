@@ -286,6 +286,28 @@
         .service-card:nth-child(3)::before { background: var(--blue); }
         .service-card:nth-child(4)::before { background: var(--orange); }
 
+        .service-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        .badge-free {
+            background: var(--green-dim);
+            color: var(--green);
+            border: 1px solid var(--green);
+        }
+
+        .badge-paid {
+            background: var(--accent-dim);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+
         .service-card:hover {
             border-color: var(--accent-dim);
             transform: translateY(-2px);
@@ -508,6 +530,7 @@
     <!-- NAV -->
     <nav class="nav-tabs">
         <a href="#menu" class="nav-tab active" onclick="switchTab(this)">🍫 Menú</a>
+        <a href="#tech" class="nav-tab" onclick="switchTab(this)">⚡ Tech</a>
     </nav>
 
     <!-- ═══════════ MENU SECTION ═══════════ -->
@@ -584,6 +607,30 @@
         </div>
     </section>
 
+
+    <!-- ═══════════ TECH SECTION ═══════════ -->
+    <section id="tech">
+        <div class="section-label">Servicios disponibles</div>
+        <h2 class="section-title">Tech a bordo</h2>
+
+        <div class="tip-banner">
+            <p>¿Lo necesitas? <strong>Solo dile al conductor</strong> 😊</p>
+        </div>
+
+        <div class="service-card reveal">
+            <div class="service-emoji">⚡</div>
+            <div class="service-title">Cable Lightning (iPhone)</div>
+            <div class="service-desc">¿Se te acabó la batería? Tengo cable Lightning para que cargues tu iPhone durante el viaje.</div>
+            <span class="service-badge badge-free">DISPONIBLE</span>
+        </div>
+
+        <div class="service-card reveal">
+            <div class="service-emoji">🌐</div>
+            <div class="service-title">Internet / Hotspot</div>
+            <div class="service-desc">¿Sin datos? Comparto mi internet para que te mantengas conectado mientras llegamos a tu destino.</div>
+            <span class="service-badge badge-free">DISPONIBLE</span>
+        </div>
+    </section>
 
     <!-- ANUNCIO 2: antes del footer -->
     <ins class="adsbygoogle"
